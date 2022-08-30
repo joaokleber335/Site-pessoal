@@ -34,7 +34,6 @@ p {
 
 .container {
     background-color: #fff;
-    /* border: 1px solid #000; */
 
     display: flex;
     max-width: 1320px;
@@ -60,15 +59,10 @@ main {
 
 .article {
     display: flex;
-
-    /* div {
-        padding: 0 2rem 0 0;
-    } */
 }
 
 section {
     padding: 4rem;
-    /* display: flex; */
     flex: 1 50px;
 }
 
@@ -85,4 +79,71 @@ section {
 
 .padding-right {
     padding-right: 3rem;
+}
+
+.div-campo {
+    display: inline-block;
+    flex: 1;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #bebece;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.textarea {
+    width: 100%;
+    border: 1px solid #bebece;
+    border-radius: 5px;
+}
+
+.article-fields {
+    display: flex;
+}
+
+.style-field {
+    line-height: 30px;
+    border: 1px solid #bebece;
+    border-radius: 5px;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        margin: 0;
+    }
+
+    .container,
+    .article,
+    .article-fields {
+        display: block;
+    }
+
+    .padding-right {
+        padding: 0;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+    img {
+        padding: 0 !important;
+    }
+
+    aside article {
+        padding: 0 4rem;
+    }
 }
